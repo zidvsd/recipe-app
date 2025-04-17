@@ -2,6 +2,7 @@ import React from "react";
 import { X } from "lucide-react";
 import { useEffect } from "react";
 import { links } from "./Navbar";
+import { Link } from "react-router-dom";
 const MenuOverlay = ({ menuSection, setMenuSection }) => {
   const maxTabletWidth = 900;
   useEffect(() => {
@@ -26,9 +27,14 @@ const MenuOverlay = ({ menuSection, setMenuSection }) => {
           <X size={36} className="hover-scale" />
         </button>
         {links.map((link) => (
-          <a href="" className="heading-hover">
+          <Link
+            onClick={() => setMenuSection(false)}
+            to={link.path}
+            key={link.path}
+            className="heading-hover"
+          >
             {link.name}
-          </a>
+          </Link>
         ))}
       </div>
     </div>

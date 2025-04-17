@@ -8,16 +8,16 @@
   --color-honey-yellow: #FFB74D;
   --color-warm-beige: #F4E1C1;
   --color-dark-chocolate: #5C4033;
-  --color-custom-white: #e6e6e6;
+  --color-custom-white: #333;
   --breakpoint-2xl: 90rem;
-  --font-roboto: "Roboto", sans-serif;
+  --font-roboto: "Roboto", sans-seriaaf;
   --font-quicksand: 'Quicksand', sans-serif;
   --breakpoint-tablet-sm: 40rem;
   --breakpoint-tablet-lg: 56.25rem;
 }
 
 .custom-container {
-  @apply p-4 lg:p-8 mx-auto;
+  @apply p-4 lg:p-8 mx-auto container;
 }
 
 .heading-text {

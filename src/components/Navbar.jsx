@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import SignUpButton from "./Buttons/SignUpButton";
 import LoginButton from "./Buttons/LoginButton";
+import Logo from "./Logo";
 import { Menu } from "lucide-react";
 import MenuOverlay from "./MenuOverlay"; // Import MenuOverlay component
-
+import { Link } from "react-router-dom";
 export const links = [
   { name: "Home", path: "/" },
   { name: "Recipe", path: "/recipe" },
@@ -16,22 +17,16 @@ const Navbar = () => {
   const [menuSection, setMenuSection] = useState(false); // State to toggle menu visibility
 
   return (
-    <div className="custom-container flex flex-row justify-between  items-center">
-      <div className="flex flex-row gap-x-2 items-center">
-        <img src="/src/assets/images/favicon.png" className="size-12" alt="" />
-        <h1 className="select-none heading-text text-3xl text-honey-yellow cursor-pointer">
-          Spoon<span className="text-custom-peach">ful</span>
-        </h1>
-      </div>
-
+    <nav className="custom-container flex flex-row justify-between  items-center">
       {/* Desktop Menu */}
+      <Logo />
       <ul className="hidden tablet-lg:flex gap-x-4 flex-row items-center font-roboto heading-text ">
         {links.map((link, index) => (
           <li key={index}>
-            <a className="heading-hover text-custom-peach" href={link.path}>
+            <Link className="heading-hover text-custom-peach" to={link.path}>
               {" "}
               {link.name}
-            </a>
+            </Link>
           </li>
         ))}
       </ul>
@@ -56,7 +51,7 @@ const Navbar = () => {
           setMenuSection={setMenuSection}
         />
       )}
-    </div>
+    </nav>
   );
 };
 
