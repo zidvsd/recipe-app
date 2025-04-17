@@ -4,7 +4,7 @@ import LoginButton from "./Buttons/LoginButton";
 import { Menu } from "lucide-react";
 import MenuOverlay from "./MenuOverlay"; // Import MenuOverlay component
 
-const links = [
+export const links = [
   { name: "Home", path: "/" },
   { name: "Recipe", path: "/recipe" },
   { name: "Add Recipe", path: "/add-recipe" },
@@ -28,7 +28,10 @@ const Navbar = () => {
       <ul className="hidden tablet-lg:flex gap-x-4 flex-row items-center font-roboto heading-text ">
         {links.map((link, index) => (
           <li key={index}>
-            <a href={link.path}> {link.name}</a>
+            <a className="heading-hover text-custom-peach" href={link.path}>
+              {" "}
+              {link.name}
+            </a>
           </li>
         ))}
       </ul>
@@ -43,7 +46,7 @@ const Navbar = () => {
       <Menu
         onClick={() => setMenuSection(!menuSection)} // Toggle menu visibility
         size={36}
-        className=" cursor-pointer transition duration-300 ease-in-out hover:scale-110 text-custom-peach tablet-lg:hidden"
+        className="hover-scale text-custom-peach tablet-lg:hidden"
       />
 
       {/* Menu Overlay */}

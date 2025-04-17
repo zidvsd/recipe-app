@@ -8,7 +8,8 @@
   --color-honey-yellow: #FFB74D;
   --color-warm-beige: #F4E1C1;
   --color-dark-chocolate: #5C4033;
-  --color-custom-white: hsl(255, 255, 255, 0.8) --breakpoint-2xl: 90rem;
+  --color-custom-white: #e6e6e6;
+  --breakpoint-2xl: 90rem;
   --font-roboto: "Roboto", sans-serif;
   --font-quicksand: 'Quicksand', sans-serif;
   --breakpoint-tablet-sm: 40rem;
@@ -25,4 +26,12 @@
 
 .subheading-text {
   @apply font-quicksand;
+}
+
+.heading-hover {
+  @apply transition duration-300 hover:opacity-60
+}
+
+.hover-scale {
+  @apply cursor-pointer transition duration-300 ease-in-out hover:scale-110
 }
