@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-tomato-red: #E94E77;
+  --color-lime-green: #A3D55C;
+  --color-honey-yellow: #FFB74D;
+  --color-warm-beige: #F4E1C1;
+  --color-dark-chocolate: #5C4033;
+  --breakpoint-2xl: '1440px';
+  --font-roboto: "Roboto", sans-serif;
+  --font-quicksand: 'Quicksand', sans-serif;
+}
+
+.custom-container {
+  @apply p-4 md:p-6 lg:p-8;
+}
