@@ -5,7 +5,7 @@ const NewsLetter = () => {
     <div className="flex flex-col gap-y-2">
       <h1 className="heading-text">Newsletter</h1>
       <p className="subheading-text text-xs">
-        Subctribe to our newsletter to get more free tip
+        Subscribe to our newsletter to get more free tip
       </p>
       <input
         type="text"

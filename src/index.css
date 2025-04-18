@@ -37,6 +37,6 @@
   @apply cursor-pointer transition duration-300 ease-in-out hover:scale-110
 }
 
-.section-heading {
-  @apply font-roboto font-bold
+.heading-size {
+  @apply text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl
 }
