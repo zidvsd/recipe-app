@@ -24,14 +24,20 @@ const Footer = () => {
         <div className="flex flex-col justify-between md:flex-1 w-full md:w-auto mt-8 md:mt-0">
           <div className="flex flex-row justify-between gap-x-12">
             <div className="flex flex-col gap-y-4">
-              <h1 className="heading-text text-sm">Quick links</h1>
-              <Link to={""} className="subheading-text text-xs text-nowrap">
+              <h1 className="heading-text text-sm text-nowrap">Quick links</h1>
+              <Link to={"/"} className="subheading-text text-xs text-nowrap">
                 Home
               </Link>
-              <Link to={""} className="subheading-text text-xs text-nowrap">
+              <Link
+                to={"/recipe"}
+                className="subheading-text text-xs text-nowrap"
+              >
                 Recipes
               </Link>
-              <Link to={""} className="subheading-text text-xs text-nowrap">
+              <Link
+                to={"/blog"}
+                className="subheading-text text-xs text-nowrap"
+              >
                 Blog
               </Link>
             </div>
@@ -41,7 +47,10 @@ const Footer = () => {
               <Link to={""} className="subheading-text text-xs text-nowrap">
                 Share Recipe
               </Link>
-              <Link to={""} className="subheading-text text-xs text-nowrap">
+              <Link
+                to={"/about"}
+                className="subheading-text text-xs text-nowrap"
+              >
                 About Us
               </Link>
               <Link to={""} className="subheading-text text-xs text-nowrap">

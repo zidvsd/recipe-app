@@ -4,7 +4,7 @@ const LoginButton = () => {
   return (
     <>
       <Link to={"login"}>
-        <button className="px-8 cursor-pointer py-2 rounded-md bg-custom-white ">
+        <button className="px-8 cursor-pointer py-2 rounded-md bg-neutral-200 ">
           <h1 className="heading-text "> Log in</h1>
         </button>
       </Link>
