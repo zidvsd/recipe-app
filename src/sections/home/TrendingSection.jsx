@@ -6,7 +6,10 @@ const TrendingSection = () => {
     <>
       <header className="flex justify-between custom-container mx-auto ">
         <h1 className="heading-text heading-size">Trending Recipe</h1>
-        <Link className="text-custom-peach heading-text text-xl hidden md:block ">
+        <Link
+          to={"/recipe"}
+          className="text-custom-peach heading-text text-xl hidden md:block "
+        >
           View More
         </Link>
       </header>
