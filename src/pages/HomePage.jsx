@@ -4,6 +4,7 @@ import ShareSection from "../sections/home/ShareSection";
 import TrendingSection from "../sections/home/TrendingSection";
 import BlogSection from "../sections/home/BlogSection";
 import ExploreSection from "../sections/home/ExploreSection";
+import CTASection from "../sections/home/CTASection";
 const HomePage = () => {
   return (
     <>
@@ -12,6 +13,7 @@ const HomePage = () => {
       <TrendingSection />
       <BlogSection />
       <ExploreSection />
+      <CTASection />
     </>
   );
 };

@@ -73,8 +73,12 @@ const Footer = () => {
         </div>
 
         {/* Newsletter */}
-        <div className="md:flex-1 hidden lg:block">
-          <NewsLetter />
+        <div className="md:flex-1 hidden lg:flex flex-col text-center justify-start">
+          <h1 className="heading-text text-md">Newsletter</h1>
+          <p className="subheading-text text-xs mb-2">
+            Subscribe to our newsletter to get more free tip
+          </p>
+          <NewsLetter width={100} textColor={"#ffffff"} />
         </div>
       </div>
       <div className="md:hidden">

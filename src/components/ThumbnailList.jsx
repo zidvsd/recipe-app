@@ -5,7 +5,12 @@ import { RecipeContext } from "../context/RecipeProvider";
 import Loading from "./Loading";
 import { Star } from "lucide-react";
 import { Bookmark } from "lucide-react";
+import { YoutubeIcon } from "lucide-react";
+import profilePlaceholder from "../assets/images/thumbnails/profile-placeholder.jpeg";
 const ThumbnailList = ({ start = 0, end = 5 }) => {
+  const handleText = (str) => {
+    return str.replace(/%/g, "-").replace(/\s+/g, "-").toLowerCase().trim();
+  };
   const [favorite, setFavorite] = useState({});
   const { meals, loading, error } = useContext(RecipeContext);
   const toggleFavorite = (id) => {
@@ -20,7 +25,8 @@ const ThumbnailList = ({ start = 0, end = 5 }) => {
       <Loading loading={loading} error={error} data={meals}>
         {meals.length !== 0
           ? meals.slice(start, end).map((meal, index) => (
-              <div
+              <Link
+                to={`/recipe/${handleText(meal.strMeal)}`}
                 key={meal.idMeal}
                 className="w-full   flex   flex-col border-neutral-300 rounded-md border relative"
               >
@@ -32,25 +38,49 @@ const ThumbnailList = ({ start = 0, end = 5 }) => {
                   alt=""
                 />
                 {/* bookmark */}
-                <div className="bg-white py-1 px-2 rounded-md absolute top-4 right-4">
+                {/* bookmark and YouTube icon container */}
+                <div className="bg-white py-1 px-2 rounded-md absolute top-4 right-4 flex flex-col items-center space-y-2">
+                  {/* Bookmark */}
                   <Bookmark
                     className={
                       favorite[meal.idMeal]
-                        ? "fill-honey-yellow text-honey-yellow cursor-pointer"
-                        : "text-black fill-none cursor-pointer"
+                        ? "fill-honey-yellow text-honey-yellow cursor-pointer "
+                        : "text-black fill-none cursor-pointer hover-effect hover:text-honey-yellow"
                     }
                     onClick={() => toggleFavorite(meal.idMeal)}
                   />
-                </div>
-                {/* meal rating and name */}
-                <div className="flex flex-row gap-y-2 p-4">
-                  {/* stars */}
 
-                  <p className="font-roboto font-semibold text-xl">
+                  {/* YouTube icon */}
+                  {meal.strYoutube && (
+                    <a
+                      href={meal.strYoutube}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <YoutubeIcon className="w-5 h-5 hover-effect text-black hover:text-red-500" />
+                    </a>
+                  )}
+                </div>
+
+                {/* meal rating and name */}
+
+                <div className="flex flex-col-reverse gap-y-2 md:flex-row justify-start md:justify-between md:items-center items-start p-4">
+                  {/* profile*/}
+                  <div className="flex flex-row gap-x-2 items-center">
+                    <img
+                      className="rounded-full size-8"
+                      src={profilePlaceholder}
+                      alt=""
+                    />
+                    <h1 className="heading-text text-sm text-nowrap">
+                      Mang Juan
+                    </h1>
+                  </div>
+                  <p className="font-roboto text-sm font-semibold ">
                     {meal.strMeal}
                   </p>
                 </div>
-              </div>
+              </Link>
             ))
           : ""}
       </Loading>

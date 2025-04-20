@@ -9,6 +9,7 @@ import {
   LoginPage,
   RecipePage,
   SignupPage,
+  SingleRecipePage,
 } from "../pages/index.js";
 import NotFound from "../components/NotFound";
 
@@ -20,6 +21,7 @@ const AppRoutes = () => {
           <Route element={<MainLayout />}>
             <Route path="/" element={<HomePage />} />
             <Route path="recipe" element={<RecipePage />} />
+            <Route path="recipe/:id" element={<SingleRecipePage />} />
             <Route path="add-recipe" element={<AddRecipe />} />
             <Route path="blog" element={<BlogPage />} />
             <Route path="about" element={<AboutPage />} />

@@ -6,7 +6,7 @@ const SectionHeader = ({ title, linkPath }) => {
       <h1 className="heading-text heading-size">{title}</h1>
       <Link
         to={linkPath}
-        className="text-custom-peach heading-text text-xl hidden md:block "
+        className="heading-hover text-custom-peach heading-text text-xl hidden md:block "
       >
         View More
       </Link>

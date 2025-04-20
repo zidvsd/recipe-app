@@ -1,22 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
 
 @theme {
-  --color-tomato-red: #E94E77;
+  --color-tomato-red: #e94e77;
   --color-custom-peach: #ef6151;
-  --color-lime-green: #A3D55C;
-  --color-honey-yellow: #FFB74D;
-  --color-warm-beige: #F4E1C1;
-  --color-dark-chocolate: #5C4033;
+  --color-lime-green: #a3d55c;
+  --color-honey-yellow: #ffb74d;
+  --color-warm-beige: #f8eedf;
+  --color-dark-chocolate: #5c4033;
   --color-custom-white: #333;
   --breakpoint-2xl: 90rem;
   --font-roboto: "Roboto", sans-seriaaf;
-  --font-quicksand: 'Quicksand', sans-serif;
+  --font-quicksand: "Quicksand", sans-serif;
   --breakpoint-tablet-sm: 40rem;
   --breakpoint-tablet-lg: 56.25rem;
 }
 
-
+.peach-gradient {
+  @apply bg-gradient-to-r from-[#ffffff] to-[#ef6151];
+}
 
 .custom-container {
   @apply p-4 lg:p-8 mx-auto container;
@@ -31,13 +33,17 @@
 }
 
 .heading-hover {
-  @apply transition duration-300 hover:opacity-60
+  @apply transition duration-300 hover:opacity-60;
+}
+
+.hover-effect {
+  @apply transition duration-300;
 }
 
 .hover-scale {
-  @apply cursor-pointer transition duration-300 ease-in-out hover:scale-110
+  @apply cursor-pointer transition duration-300 ease-in-out hover:scale-110;
 }
 
 .heading-size {
-  @apply text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl
+  @apply text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl;
 }
