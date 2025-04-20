@@ -1,18 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import ThumbnailList from "../../components/ThumbnailList";
+import SectionHeader from "../../components/SectionHeader";
+import { Link } from "react-router-dom";
 const TrendingSection = () => {
   return (
     <>
-      <header className="flex justify-between custom-container mx-auto ">
-        <h1 className="heading-text heading-size">Trending Recipe</h1>
-        <Link
-          to={"/recipe"}
-          className="text-custom-peach heading-text text-xl hidden md:block "
-        >
-          View More
-        </Link>
-      </header>
+      <SectionHeader title={"Trending Recipe"} linkPath={"/recipe"} />
       <ThumbnailList start={0} end={6} />
     </>
   );

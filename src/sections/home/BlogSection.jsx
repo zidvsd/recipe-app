@@ -1,20 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import BlogList from "../../components/BlogList";
+import SectionHeader from "../../components/SectionHeader";
 const BlogSection = () => {
   return (
-    <>
-      <header className="flex justify-between custom-container mx-auto ">
-        <h1 className="heading-text heading-size">Blog</h1>
-        <Link
-          to={"/blog"}
-          className="text-custom-peach heading-text text-xl hidden md:block "
-        >
-          View More
-        </Link>
-      </header>
+    <div className="custom-container mx-auto space-y-8">
+      <SectionHeader title={"Blog"} linkPath={"/blog"} />
       <BlogList />
-    </>
+    </div>
   );
 };
 
