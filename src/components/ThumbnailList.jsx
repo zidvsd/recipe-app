@@ -15,20 +15,20 @@ const ThumbnailList = ({ start = 0, end = 5 }) => {
     }));
   };
   return (
-    <div className="mx-auto custom-container grid grid-cols-2 md:grid-cols-3 gap-4">
+    <div className="mx-auto custom-container place-items-center grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 lg:gap-12">
       {/* meal card */}
       <Loading loading={loading} error={error} data={meals}>
         {meals.length !== 0
           ? meals.slice(start, end).map((meal, index) => (
               <div
                 key={meal.idMeal}
-                className="w-full flex   flex-col border-neutral-300 rounded-md border relative"
+                className="w-full lg:w-[90%]  flex   flex-col border-neutral-300 rounded-md border relative"
               >
                 {/* meal thumbnail */}
 
                 <img
                   src={meal.strMealThumb}
-                  className="w-full object-cover rounded-tr-md rounded-tl-md"
+                  className="w-full  object-cover rounded-tr-md rounded-tl-md"
                   alt=""
                 />
                 {/* bookmark */}
