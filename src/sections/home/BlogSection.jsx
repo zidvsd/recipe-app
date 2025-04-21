@@ -5,7 +5,7 @@ import SectionHeader from "../../components/SectionHeader";
 const BlogSection = () => {
   return (
     <div className="custom-container mx-auto space-y-8">
-      <SectionHeader title={"Blog"} linkPath={"/blog"} />
+      <SectionHeader title={"Blog"} linkPath={"/blog"} viewMore={"View More"} />
       <BlogList />
     </div>
   );

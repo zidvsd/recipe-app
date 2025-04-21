@@ -7,6 +7,7 @@ import RecipePage from "./RecipePage";
 import SignupPage from "./SignupPage";
 import SingleRecipePage from "./SingleRecipePage";
 import SingleBlogPage from "./SingleBlogPage";
+import PopularCategoryPage from "./PopularCategoryPage";
 export {
   AboutPage,
   AddRecipe,
@@ -17,4 +18,5 @@ export {
   SignupPage,
   SingleRecipePage,
   SingleBlogPage,
+  PopularCategoryPage,
 };

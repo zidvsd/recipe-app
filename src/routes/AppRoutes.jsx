@@ -7,6 +7,7 @@ import {
   BlogPage,
   HomePage,
   LoginPage,
+  PopularCategoryPage,
   RecipePage,
   SignupPage,
   SingleBlogPage,
@@ -30,6 +31,7 @@ const AppRoutes = () => {
             <Route path="*" element={<NotFound />} />
             <Route path="login" element={<LoginPage />} />
             <Route path="sign-in" element={<SignupPage />} />
+            <Route path="popular" element={<PopularCategoryPage />} />
           </Route>
         </Route>
       </Routes>

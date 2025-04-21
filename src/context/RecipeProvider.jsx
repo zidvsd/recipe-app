@@ -13,7 +13,6 @@ export const RecipeProvider = ({ children }) => {
         const res = await fetch(apiUrl);
         const data = await res.json();
         console.log(data);
-        setLoading(!loading);
         setMeals(data.meals || []);
       } catch (error) {
         setError(error.message || "Something went wrong");

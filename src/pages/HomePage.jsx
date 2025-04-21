@@ -6,6 +6,7 @@ import BlogSection from "../sections/home/BlogSection";
 import ExploreSection from "../sections/home/ExploreSection";
 import CTASection from "../sections/home/CTASection";
 import PopularSection from "../sections/home/PopularSection";
+import SponsorList from "../components/SponsorList";
 const HomePage = () => {
   return (
     <>
@@ -16,6 +17,7 @@ const HomePage = () => {
       <ExploreSection />
       <CTASection />
       <PopularSection />
+      <SponsorList />
     </>
   );
 };

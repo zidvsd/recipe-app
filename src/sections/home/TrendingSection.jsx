@@ -5,8 +5,12 @@ import { Link } from "react-router-dom";
 const TrendingSection = () => {
   return (
     <>
-      <SectionHeader title={"Trending Recipe"} linkPath={"/recipe"} />
-      <ThumbnailList start={0} end={6} />
+      <SectionHeader
+        title={"Trending Recipe"}
+        viewMore={"View More"}
+        linkPath={"/recipe"}
+      />
+      <ThumbnailList start={0} end={6} vie />
     </>
   );
 };

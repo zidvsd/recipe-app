@@ -7,10 +7,8 @@ import { Star } from "lucide-react";
 import { Bookmark } from "lucide-react";
 import { YoutubeIcon } from "lucide-react";
 import profilePlaceholder from "../assets/images/thumbnails/profile-placeholder.jpeg";
+import { urlTextHandler } from "../utils/urlTextHandler";
 const ThumbnailList = ({ start = 0, end = 5 }) => {
-  const handleText = (str) => {
-    return str.replace(/%/g, "-").replace(/\s+/g, "-").toLowerCase().trim();
-  };
   const [favorite, setFavorite] = useState({});
   const { meals, loading, error } = useContext(RecipeContext);
   const toggleFavorite = (id) => {
@@ -26,7 +24,7 @@ const ThumbnailList = ({ start = 0, end = 5 }) => {
         {meals.length !== 0
           ? meals.slice(start, end).map((meal, index) => {
               const isFavorited = favorite[meal.idMeal];
-              const mealUrl = `/recipe/${handleText(meal.strMeal)}`;
+              const mealUrl = `/recipe/${urlTextHandler(meal.strMeal)}`;
 
               return (
                 <div
