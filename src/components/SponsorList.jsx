@@ -11,13 +11,13 @@ const sponsors = {
 
 const SponsorList = () => {
   return (
-    <div className="flex flex-row items-center justify-between gap-x-2 custom-container mx-auto">
+    <div className="flex flex-wrap items-center justify-center gap-4 custom-container mx-auto">
       {Object.entries(sponsors).map(([name, icon], index) => (
         <img
           key={index}
           src={icon}
           alt={name}
-          className="size-12 sm:size-16 md:w-20 lg:32 object-contain "
+          className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 object-contain"
         />
       ))}
     </div>
