@@ -6,6 +6,7 @@ import LoginPage from "./LoginPage";
 import RecipePage from "./RecipePage";
 import SignupPage from "./SignupPage";
 import SingleRecipePage from "./SingleRecipePage";
+import SingleBlogPage from "./SingleBlogPage";
 export {
   AboutPage,
   AddRecipe,
@@ -15,4 +16,5 @@ export {
   RecipePage,
   SignupPage,
   SingleRecipePage,
+  SingleBlogPage,
 };

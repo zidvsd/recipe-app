@@ -2,7 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import { useState, useEffect, useContext } from "react";
 import { RecipeContext } from "../context/RecipeProvider";
-const SingleRecipePage = () => {
+const SingleBlogPage = () => {
   const { meals, loading, error } = useContext(RecipeContext);
 
   const { id } = useParams();
@@ -11,4 +11,4 @@ const SingleRecipePage = () => {
   return <div></div>;
 };
 
-export default SingleRecipePage;
+export default SingleBlogPage;
