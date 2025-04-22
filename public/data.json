@@ -5,7 +5,7 @@
     "slug": "the-secret-to-a-perfect-carbonara",
     "date": "January, 2023",
     "content": "Let’s clear the air—authentic carbonara does not use cream. That rich, velvety texture? It comes from a beautiful emulsion of egg yolks, grated Parmesan (or Pecorino Romano), and the starchy water left behind by your pasta. The key is timing: mix the egg and cheese mixture into the pasta *off the heat* to avoid scrambling. Use guanciale if you can find it; pancetta works great too. Finish with cracked black pepper and a sprinkle of love. That’s real carbonara, baby. If you’re feeling adventurous, make your own pasta from scratch—it’ll elevate the dish to a whole new level. And remember: quality ingredients make all the difference. Freshly cracked pepper, aged cheese, and perfectly cooked pasta are the foundations of this Roman classic. Enjoy with a glass of white wine, and you’ve got a restaurant-quality meal at home.",
-    "thumbnail": "/src/assets/images/thumbnails/blog-carbonara.jpeg"
+    "thumbnail": "/images/blog-carbonara.jpeg"
   },
   {
     "id": 2,
@@ -13,7 +13,7 @@
     "slug": "5-superfoods-that-boost-your-energy",
     "date": "December, 2024",
     "content": "If your energy dips more than your favorite playlist, it might be time to rethink your snacks. Here are my go-to superfoods:\n\n1. **Spinach** – Iron-rich and easy to toss into smoothies or omelets.\n2. **Sweet Potatoes** – Complex carbs with natural sweetness. Roast 'em up!\n3. **Quinoa** – A complete protein that fills you up without weighing you down.\n4. **Almonds** – Healthy fats that keep your brain sharp.\n5. **Chia Seeds** – Tiny powerhouses of fiber and Omega-3s.\n\nStart sprinkling these into your daily meals, and you’ll notice a serious boost in your get-up-and-go. Combine two or three of these into a smoothie bowl, or prep energy bites using almond butter and chia seeds. Eating smart doesn’t have to be boring—it can be colorful, tasty, and energizing all at once!",
-    "thumbnail": "/src/assets/images/thumbnails/blog-superfood.jpeg"
+    "thumbnail": "/images/blog-superfood.jpeg"
   },
 
   {
@@ -22,7 +22,7 @@
     "slug": "exploring-the-world-of-ramen-a-japanese-classic",
     "date": "July, 2022",
     "content": "Ramen is more than just a comfort food—it’s a cultural icon. What started as a simple bowl of noodles in broth has become a full-blown art form across Japan and beyond. Shoyu ramen brings a soy sauce base; miso ramen is rich and nutty; and tonkotsu, oh boy, that pork-bone broth will rock your world. The secret? Time. A good broth simmers for hours. Add some marinated eggs, sliced pork belly, and fresh scallions, and you’ve got a soul-warming bowl of joy. Want to take it further? Try making your own noodles. It’s worth the effort! You’ll also appreciate the difference that toppings make—corn, nori, bamboo shoots, and a drizzle of aromatic oil can take it from good to unforgettable. Whether you’re slurping in a shop in Tokyo or cooking at home, ramen is pure, savory happiness in a bowl.",
-    "thumbnail": "/src/assets/images/thumbnails/blog-ramen.jpeg"
+    "thumbnail": "/images/blog-ramen.jpeg"
   },
   {
     "id": 4,
@@ -30,7 +30,7 @@
     "slug": "healthy-snacking-guilt-free-treats-that-taste-amazing",
     "date": "March, 2025",
     "content": "Let’s be honest—most of us snack mindlessly while scrolling or watching something. So why not make those snacks count? My favorite guilt-free treats include Greek yogurt with a drizzle of honey and some nuts (protein, probiotics, sweetness—all in one). Apple slices with almond butter? Chef’s kiss. Homemade granola bars? Make a big batch on Sunday and snack smart all week. Ditch the chips and try roasted chickpeas—crispy, salty, and oh-so-satisfying. You don’t need to sacrifice flavor to snack smart! Add air-popped popcorn with a pinch of sea salt and nutritional yeast to your list, or frozen grapes for a naturally sweet bite. The key is planning ahead—having these ready-to-go options will keep your taste buds and your body happy.",
-    "thumbnail": "/src/assets/images/thumbnails/blog-waffle.jpeg"
+    "thumbnail": "/images/blog-waffle.jpeg"
   },
   {
     "id": 5,
@@ -38,6 +38,6 @@
     "slug": "fermented-foods-why-your-gut-will-thank-you",
     "date": "August, 2023",
     "content": "If you haven’t jumped on the fermented food train yet, now’s the time. Kimchi, sauerkraut, kefir, kombucha—these are not just trendy items in health stores. They’re ancient foods packed with probiotics, the good bacteria your gut loves. A healthy gut = better digestion, stronger immunity, and even better mood. Try adding a spoonful of sauerkraut to your sandwiches or mixing kefir into your morning smoothies. Your belly will thank you, and honestly, fermented foods just add a delicious tang that brightens up any dish! Fermentation also preserves nutrients and adds complexity to your meals. Don’t be afraid to explore local fermented options too—each culture has its own twist, from miso to tempeh to yogurt. Making your own at home is easier than you think and incredibly rewarding.",
-    "thumbnail": "/src/assets/images/thumbnails/blog-fermented.jpeg"
+    "thumbnail": "/images/blog-fermented.jpeg"
   }
 ]
