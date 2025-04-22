@@ -59,7 +59,7 @@ const SingleBlogPage = () => {
         </article>
       </div>
       <div className="w-full md:w-[30%] lg:wd-[25%]">
-        <BlogSidebar />
+        <BlogSidebar currentSlug={slug} />
       </div>
     </section>
   );

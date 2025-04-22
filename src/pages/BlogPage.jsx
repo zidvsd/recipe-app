@@ -1,6 +1,7 @@
 import React from "react";
 import BlogList from "../components/BlogList";
 import BlogHeroCard from "../components/BlogHeroCard";
+import CTASidebar from "../components/CTASidebar";
 const BlogPage = () => {
   return (
     <>
