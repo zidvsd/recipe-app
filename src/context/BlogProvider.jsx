@@ -1,5 +1,4 @@
 import React, { createContext, useState, useEffect } from "react";
-import data from "../data.json"; // adjust path if needed
 
 export const BlogContext = createContext();
 
@@ -7,7 +6,17 @@ export const BlogProvider = ({ children }) => {
   const [blogs, setBlogs] = useState([]);
 
   useEffect(() => {
-    setBlogs(data); // Directly use imported JSON, no fetch needed
+    const fetchData = async () => {
+      try {
+        const response = await fetch("/data.json");
+        const data = await response.json();
+        setBlogs(data);
+      } catch (error) {
+        console.error("Error fetching blog data:", error);
+      }
+    };
+
+    fetchData();
   }, []);
 
   return (

@@ -24,7 +24,7 @@ const AppRoutes = () => {
             <Route path="/" element={<HomePage />} />
             <Route path="recipe" element={<RecipePage />} />
             <Route path="recipe/:id" element={<SingleRecipePage />} />
-            <Route path="blog/:id" element={<SingleBlogPage />} />
+            <Route path="blog/:slug" element={<SingleBlogPage />} />
             <Route path="add-recipe" element={<AddRecipe />} />
             <Route path="blog" element={<BlogPage />} />
             <Route path="about" element={<AboutPage />} />

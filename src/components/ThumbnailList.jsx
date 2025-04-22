@@ -5,7 +5,7 @@ import { RecipeContext } from "../context/RecipeProvider";
 import Loading from "./Loading";
 import { Star, Bookmark, YoutubeIcon } from "lucide-react";
 import profilePlaceholder from "../assets/images/thumbnails/profile-placeholder.jpeg";
-import { urlTextHandler } from "../utils/urlTextHandler";
+import { slugify } from "../utils/urlTextHandler";
 
 const ThumbnailList = ({ start = 0, end = 5 }) => {
   const [favorite, setFavorite] = useState({});
@@ -24,7 +24,7 @@ const ThumbnailList = ({ start = 0, end = 5 }) => {
         {meals.length !== 0 &&
           meals.slice(start, end).map((meal) => {
             const isFavorited = favorite[meal.idMeal];
-            const mealUrl = `/recipe/${urlTextHandler(meal.strMeal)}`;
+            const mealUrl = `/recipe/${slugify(meal.strMeal)}`;
 
             return (
               <div
@@ -73,7 +73,7 @@ const ThumbnailList = ({ start = 0, end = 5 }) => {
                         alt="profile"
                         className="w-6 h-6 rounded-full hover:scale-110 transition-transform"
                       />
-                      <p className="text-xs font-medium text-gray-700 font-semibold">
+                      <p className="text-xs  text-gray-700 font-semibold">
                         Mang Juan
                       </p>
                     </div>
