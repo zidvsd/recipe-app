@@ -7,7 +7,7 @@ const BlogCards = ({ blog, limit = 70 }) => {
     <div className="  text-black border-neutral-200 border rounded-md">
       {/* Ensure image takes the full height of its container and crops if necessary */}
       <img
-        className="w-full h-82 object-cover rounded-tr-md rounded-tl-md lg:h-102"
+        className="w-full h-82 object-cover rounded-tr-md rounded-tl-md lg:h-102 thumbnail-zoom-hover"
         src={blog.thumbnail}
         alt=""
       />

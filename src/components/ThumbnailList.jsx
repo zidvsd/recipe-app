@@ -35,7 +35,7 @@ const ThumbnailList = ({ start = 0, end = 5 }) => {
                 <Link to={mealUrl}>
                   <img
                     src={meal.strMealThumb}
-                    className="w-full h-44 object-cover transition-transform duration-300 hover:scale-[1.02]"
+                    className="w-full h-44 object-cover thumbnail-zoom-hover"
                     alt={meal.strMeal}
                   />
                 </Link>
