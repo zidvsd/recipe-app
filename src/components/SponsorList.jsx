@@ -17,7 +17,7 @@ const SponsorList = () => {
           key={index}
           src={icon}
           alt={name}
-          className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 object-contain"
+          className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:size-24 object-contain"
         />
       ))}
     </div>

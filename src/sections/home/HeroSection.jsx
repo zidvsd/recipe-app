@@ -9,7 +9,10 @@ const HeroSection = () => {
   console.log(meals);
   console.log(loading);
   return (
-    <div className="custom-container mx-auto grid grid-cols-1 md:grid-cols-2 w-full ">
+    <section
+      id="hero-section"
+      className="custom-container mx-auto grid grid-cols-1 md:grid-cols-2 w-full "
+    >
       {/* hero text */}
       <div className="flex w-full flex-col gap-y-4 items-center justify-center text-center md:items-start md:justify-center md:text-left ">
         <h1 className="heading-text heading-size">
@@ -42,7 +45,7 @@ const HeroSection = () => {
           )}
         </Loading>
       </div>
-    </div>
+    </section>
   );
 };
 

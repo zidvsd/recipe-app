@@ -1,48 +1,48 @@
 import React from "react";
 import { useContext, useState } from "react";
-import { data, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { RecipeContext } from "../context/RecipeProvider";
 import Loading from "./Loading";
-import { Star } from "lucide-react";
-import { Bookmark } from "lucide-react";
-import { YoutubeIcon } from "lucide-react";
+import { Star, Bookmark, YoutubeIcon } from "lucide-react";
 import profilePlaceholder from "../assets/images/thumbnails/profile-placeholder.jpeg";
 import { urlTextHandler } from "../utils/urlTextHandler";
+
 const ThumbnailList = ({ start = 0, end = 5 }) => {
   const [favorite, setFavorite] = useState({});
   const { meals, loading, error } = useContext(RecipeContext);
+
   const toggleFavorite = (id) => {
     setFavorite((prev) => ({
       ...prev,
       [id]: !prev[id],
     }));
   };
+
   return (
-    <div className="mx-auto  custom-container place-items-center grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
-      {/* meal card */}
+    <div className="mx-auto custom-container grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 lg:gap-8 place-items-center">
       <Loading loading={loading} error={error} data={meals}>
-        {meals.length !== 0
-          ? meals.slice(start, end).map((meal, index) => {
-              const isFavorited = favorite[meal.idMeal];
-              const mealUrl = `/recipe/${urlTextHandler(meal.strMeal)}`;
+        {meals.length !== 0 &&
+          meals.slice(start, end).map((meal) => {
+            const isFavorited = favorite[meal.idMeal];
+            const mealUrl = `/recipe/${urlTextHandler(meal.strMeal)}`;
 
-              return (
-                <div
-                  key={meal.idMeal}
-                  className=" flex flex-col border-neutral-300 rounded-md border relative"
-                >
-                  {/* meal thumbnail wrapped in Link */}
-                  <Link to={mealUrl}>
-                    <img
-                      src={meal.strMealThumb}
-                      className="w-full  object-cover rounded-tr-md rounded-tl-md"
-                      alt=""
-                    />
-                  </Link>
+            return (
+              <div
+                key={meal.idMeal}
+                className="max-w-[400px] w-full flex flex-col border border-neutral-300 rounded-lg overflow-hidden shadow-md bg-white relative"
+              >
+                {/* Image */}
+                <Link to={mealUrl}>
+                  <img
+                    src={meal.strMealThumb}
+                    className="w-full h-44 object-cover transition-transform duration-300 hover:scale-[1.02]"
+                    alt={meal.strMeal}
+                  />
+                </Link>
 
-                  {/* bookmark and YouTube icon container */}
-                  <div className="bg-white py-1 px-2 rounded-md absolute top-4 right-4 flex flex-col items-center space-y-2">
-                    {/* Bookmark */}
+                {/* Bookmark and YouTube */}
+                <div className="absolute top-2 right-2 flex flex-col gap-2">
+                  <div className="bg-white p-1 rounded-md shadow-md">
                     <Bookmark
                       className={
                         isFavorited
@@ -51,40 +51,48 @@ const ThumbnailList = ({ start = 0, end = 5 }) => {
                       }
                       onClick={() => toggleFavorite(meal.idMeal)}
                     />
-
-                    {/* YouTube icon */}
-                    {meal.strYoutube && (
-                      <a
-                        href={meal.strYoutube}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <YoutubeIcon className="w-5 h-5 hover-effect text-black hover:text-red-500" />
-                      </a>
-                    )}
                   </div>
+                  {meal.strYoutube && (
+                    <a
+                      href={meal.strYoutube}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="bg-white p-1 rounded-md shadow-md"
+                    >
+                      <YoutubeIcon className="w-5 h-5 text-black hover:text-red-500" />
+                    </a>
+                  )}
+                </div>
 
-                  {/* meal rating and name */}
-                  <div className="flex flex-col-reverse gap-y-2 md:flex-row justify-start md:justify-between md:items-center items-start p-4">
-                    {/* profile */}
-                    <div className="flex flex-row gap-x-2 items-center">
+                {/* Details */}
+                <div className="p-4">
+                  <div className="flex justify-between items-center mb-2">
+                    <div className="flex items-center gap-2">
                       <img
-                        className="rounded-full size-8"
                         src={profilePlaceholder}
-                        alt=""
+                        alt="profile"
+                        className="w-6 h-6 rounded-full hover:scale-110 transition-transform"
                       />
-                      <h1 className="heading-text text-sm text-nowrap">
+                      <p className="text-xs font-medium text-gray-700 font-semibold">
                         Mang Juan
-                      </h1>
+                      </p>
                     </div>
-                    <p className="font-roboto text-sm font-semibold">
+                    <p className="text-sm font-semibold text-right text-custom-peach">
                       {meal.strMeal}
                     </p>
                   </div>
+                  <div className="flex gap-1">
+                    {[...Array(5)].map((_, i) => (
+                      <Star
+                        key={i}
+                        className="w-4 h-4 text-honey-yellow fill-honey-yellow"
+                      />
+                    ))}
+                  </div>
                 </div>
-              );
-            })
-          : ""}
+              </div>
+            );
+          })}
       </Loading>
     </div>
   );
