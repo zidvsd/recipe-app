@@ -8,7 +8,7 @@ const BlogHeroCard = ({ limit }) => {
   const { blogs } = useContext(BlogContext);
   return (
     <div className="custom-container mx-auto  w-full ">
-      <div className="border border-neutral-200 rounded-lg p-4 flex flex-col md:flex-row-reverse justify-between items-center shadow-xl md:justify-start md:items-start lg:items-center lg:justify-center">
+      <div className="border border-neutral-300 rounded-lg p-6 flex flex-col md:flex-row-reverse justify-between items-center shadow-xl md:justify-start md:items-start lg:items-center lg:justify-center">
         <div className="w-full md:w-1/2">
           <img src={blogs[0].thumbnail} alt="" />
         </div>

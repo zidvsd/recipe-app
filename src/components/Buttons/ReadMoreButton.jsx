@@ -5,7 +5,7 @@ const ReadMoreButton = ({ linkPath }) => {
   return (
     <Link
       to={linkPath || "#hero-section"}
-      className="w-fit rounded-lg flex flex-row  text-white bg-custom-peach px-8 py-2 gap-x-4"
+      className="w-fit thumbnail-zoom-hover rounded-lg flex flex-row  text-white bg-custom-peach px-8 py-2 gap-x-4"
     >
       <span className="heading-text text-md lg:text-xl">Read More</span>
       <ArrowRight />

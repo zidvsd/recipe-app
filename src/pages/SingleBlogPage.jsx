@@ -8,6 +8,7 @@ import { CalendarFold } from "lucide-react";
 import { Star } from "lucide-react";
 import BlogSidebar from "../components/BlogSidebar";
 import SectionHeader from "../components/SectionHeader";
+import RecipeSidebar from "../components/RecipeSidebar";
 const SingleBlogPage = () => {
   const { blogs } = useContext(BlogContext);
   const { slug } = useParams();
@@ -58,8 +59,9 @@ const SingleBlogPage = () => {
           {selectedItem.content}
         </article>
       </div>
-      <div className="w-full md:w-[30%] lg:wd-[25%]">
+      <div className="flex-col space-y-4  w-full md:w-[30%] lg:wd-[25%]">
         <BlogSidebar currentSlug={slug} />
+        <RecipeSidebar currentSlug={slug} />
       </div>
     </section>
   );

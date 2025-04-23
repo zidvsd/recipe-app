@@ -4,10 +4,10 @@ import { truncateText } from "../utils/truncateText";
 
 const BlogCards = ({ blog, limit = 70 }) => {
   return (
-    <div className="  text-black border-neutral-200 border rounded-md">
+    <div className="  text-black border-neutral-200 border rounded-md thumbnail-zoom-hover">
       {/* Ensure image takes the full height of its container and crops if necessary */}
       <img
-        className="w-full h-82 object-cover rounded-tr-md rounded-tl-md lg:h-102 thumbnail-zoom-hover"
+        className="w-full h-82 object-cover rounded-tr-md rounded-tl-md lg:h-102 "
         src={blog.thumbnail}
         alt=""
       />

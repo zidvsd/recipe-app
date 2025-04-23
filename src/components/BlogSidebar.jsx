@@ -19,12 +19,12 @@ const BlogSidebar = ({ currentSlug }) => {
         >
           <Link
             to={`/blog/${blog.slug}`}
-            className="block w-full md:w-[8rem] lg:w-[8rem] "
+            className="w-full md:w-[8rem] lg:w-[8rem] "
           >
             <img
               src={blog.thumbnail}
               alt={blog.title}
-              className="w-full h-full md:h-[5rem] lg:h-[8rem] object-cover"
+              className="w-full h-full aspect-4/3 object-cover "
             />
           </Link>
           <div className="w-full md:w-1/2 flex flex-col-reverse md:flex-col mt-4 gap-y-2">
