@@ -4,7 +4,7 @@ import BlogList from "../../components/BlogList";
 import SectionHeader from "../../components/SectionHeader";
 const BlogSection = () => {
   return (
-    <section id="blog-section" className="custom-container mx-auto space-y-8">
+    <section id="blog-section" className="custom-container mx-auto ">
       <SectionHeader title={"Blog"} linkPath={"/blog"} viewMore={"View More"} />
       <BlogList />
     </section>

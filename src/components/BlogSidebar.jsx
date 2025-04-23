@@ -28,7 +28,9 @@ const BlogSidebar = ({ currentSlug }) => {
             />
           </Link>
           <div className="w-full md:w-1/2 flex flex-col-reverse md:flex-col mt-4 gap-y-2">
-            <h1 className="heading-text text-sm">{blog.title}</h1>
+            <Link to={`/blog/${blog.slug}`}>
+              <h1 className="heading-text text-sm">{blog.title}</h1>
+            </Link>
             <div className="flex flex-row gap-1">
               {[...Array(5)].map((_, i) => (
                 <Star
