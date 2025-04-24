@@ -9,21 +9,22 @@ import {
   MotionLink,
 } from "../components/animations/MotionComponents";
 import { fadeInRight } from "../components/animations/variants";
-
 const AboutPage = () => {
+  const chefImg = "./images/chef-thumbnail.png";
+
   return (
     <MotionSection className="custom-container py-20">
       <div className="grid lg:grid-cols-2 gap-12 items-center">
         {/* Image / Illustration */}
         <MotionImage
-          src="/about-cooking.svg" // replace with your image or illustration
+          src={chefImg} // replace with your image or illustration
           alt="About Cooking"
-          className="w-full max-w-md mx-auto"
+          className="w-full mx-auto"
         />
 
         {/* Text Content */}
         <MotionContainer
-          className="space-y-6 flex-col flex  text-center items-center justify-center lg:items-start lg:justify-start"
+          className="space-y-6 flex-col flex  text-center items-center justify-center lg:items-start lg:text-left lg:justify-start"
           variant={fadeInRight}
         >
           <MotionHeading className="heading-text heading-size font-bold text-custom-peach leading-tight">
@@ -37,16 +38,16 @@ const AboutPage = () => {
             modern tech and a passion for good food.
           </MotionParagraph>
 
-          <MotionDiv className="bg-gray-100 rounded-2xl p-4 sm:p-6 shadow-inner subheading-text">
+          <MotionDiv className="bg-gray-100 rounded-2xl space-y-2 p-4 sm:p-6 shadow-inner subheading-text">
+            <MotionParagraph className="heading-text text-gray-700 mt-2">
+              Discover new meals, explore categories, and find your next
+              favorite dish.
+            </MotionParagraph>
             <MotionParagraph className="text-md text-gray-700">
               <span className="heading-text font-semibold text-custom-peach">
                 Built with:
               </span>{" "}
               React, Tailwind CSS, and TheMealDB API.
-            </MotionParagraph>
-            <MotionParagraph className="text-md text-gray-700 mt-2">
-              Discover new meals, explore categories, and find your next
-              favorite dish.
             </MotionParagraph>
           </MotionDiv>
 
@@ -60,7 +61,7 @@ const AboutPage = () => {
             </MotionLink>
             <MotionLink
               target="_blank"
-              href="mailto:youremail@example.com"
+              href="mailto:rashidvisda@gmail.com"
               className="px-4 py-2 border-2 border-custom-peach text-custom-peach rounded-xl hover:bg-custom-peach hover:text-white transition"
             >
               Contact Me

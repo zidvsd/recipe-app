@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../assets/images/favicon.png";
+import logo from "/favicon.png";
 import { Link } from "react-router-dom";
 const Logo = () => {
   return (
