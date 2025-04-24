@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 export const links = [
   { name: "Home", path: "/" },
   { name: "Recipe", path: "/recipe" },
-  { name: "Add Recipe", path: "/add-recipe" },
+  { name: "Category", path: "/category" },
   { name: "Blog", path: "/blog" },
   { name: "About Us", path: "/about" },
 ];

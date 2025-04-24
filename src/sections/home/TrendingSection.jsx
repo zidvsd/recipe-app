@@ -1,17 +1,25 @@
 import React from "react";
 import ThumbnailList from "../../components/ThumbnailList";
 import SectionHeader from "../../components/SectionHeader";
-import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { RecipeContext } from "../../context/RecipeProvider";
+import { shuffleArray } from "../../utils/shuffleArray";
+import FadeInWhenVisible from "../../components/animations/FadeInWhenVisible.jsx";
+
 const TrendingSection = () => {
+  const { meals } = useContext(RecipeContext);
+
   return (
-    <section id="trending-section">
-      <SectionHeader
-        title={"Trending Recipe"}
-        viewMore={"View More"}
-        linkPath={"/recipe"}
-      />
-      <ThumbnailList start={0} end={6} vie />
-    </section>
+    <FadeInWhenVisible>
+      <section id="trending-section">
+        <SectionHeader
+          title={"Trending Recipe"}
+          viewMore={"View More"}
+          linkPath={"/recipe"}
+        />
+        <ThumbnailList items={shuffleArray(meals.slice(0, 6))} />
+      </section>
+    </FadeInWhenVisible>
   );
 };
 

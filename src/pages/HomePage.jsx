@@ -5,7 +5,7 @@ import TrendingSection from "../sections/home/TrendingSection";
 import BlogSection from "../sections/home/BlogSection";
 import ExploreSection from "../sections/home/ExploreSection";
 import CTASection from "../sections/home/CTASection";
-import PopularSection from "../sections/home/PopularSection";
+import CategorySection from "../sections/home/CategorySection";
 import SponsorList from "../components/SponsorList";
 const HomePage = () => {
   return (
@@ -16,7 +16,7 @@ const HomePage = () => {
       <BlogSection />
       <ExploreSection />
       <CTASection />
-      <PopularSection />
+      <CategorySection />
       <SponsorList />
     </>
   );

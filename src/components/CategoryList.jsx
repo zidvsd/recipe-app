@@ -3,7 +3,7 @@ import { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { urlTextHandler } from "../utils/urlTextHandler";
 
-const PopularList = () => {
+const CategoryList = () => {
   const [uniqueMeals, setUniqueMeals] = useState([]);
   const { meals, loading } = useContext(RecipeContext);
 
@@ -28,7 +28,7 @@ const PopularList = () => {
     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12 mx-auto custom-container">
       {uniqueMeals.map((meal, index) => (
         <div key={index} className="flex flex-col items-center gap-y-4">
-          <Link to={`/popular`}>
+          <Link to={`/category/${urlTextHandler(meal.strCategory)}`}>
             <img
               src={meal.strMealThumb}
               className="rounded-full object-cover heading-hover
@@ -45,4 +45,4 @@ const PopularList = () => {
   );
 };
 
-export default PopularList;
+export default CategoryList;

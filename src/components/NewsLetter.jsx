@@ -14,7 +14,7 @@ const NewsLetter = ({
         <Mail className="absolute left-3 top-1/2 -translate-y-1/2 text-neutral-500 w-5 h-5" />
         <input
           type="text"
-          className="w-full border p-2 pl-10 text-black border-neutral-300 rounded-md focus:outline-none placeholder:text-neutral-600"
+          className="w-full border p-2 pl-10 text-black border-neutral-400 rounded-md focus:outline-none placeholder:text-neutral-600"
           placeholder="Enter Your Email"
         />
       </div>
