@@ -10,7 +10,7 @@ import {
 } from "../components/animations/MotionComponents";
 import { fadeInRight } from "../components/animations/variants";
 const AboutPage = () => {
-  const chefImg = "./images/chef-thumbnail.png";
+  const chefImg = "/images/chef-thumbnail.png";
 
   return (
     <MotionSection className="custom-container py-20">
