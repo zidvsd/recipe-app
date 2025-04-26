@@ -4,9 +4,10 @@ import { CalendarFold } from "lucide-react";
 import { Star } from "lucide-react";
 
 const PostMeta = ({ selectedItem }) => {
+  console.log(selectedItem);
+
   return (
     <>
-      {" "}
       <h1 className="heading-text heading-size">
         {selectedItem.title || selectedItem.strMeal}
       </h1>
