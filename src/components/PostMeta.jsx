@@ -11,7 +11,7 @@ const PostMeta = ({ selectedItem }) => {
       <h1 className="heading-text heading-size">
         {selectedItem.title || selectedItem.strMeal}
       </h1>
-      <section className="mt-4 flex pb-4 flex-row gap-x-6 gap-y-2 items-center justify-start mb-4 flex-wrap border-b border-neutral-300">
+      <section className="mt-4 flex pb-4 flex-row gap-x-6 gap-y-2 items-center justify-start mb-4 flex-wrap border-b border-neutral-200">
         <div className="flex flex-row gap-x-2 items-center">
           <img
             src={profilePlaceholder}
