@@ -6,6 +6,7 @@ import Loading from "./Loading";
 import { Star, Bookmark, YoutubeIcon } from "lucide-react";
 import profilePlaceholder from "../assets/images/thumbnails/profile-placeholder.jpeg";
 import { slugify } from "../utils/urlTextHandler";
+import FadeInWhenVisible from "./animations/FadeInWhenVisible.jsx";
 import Pagination from "./Pagination";
 const ThumbnailList = ({
   items = [],

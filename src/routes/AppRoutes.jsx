@@ -1,6 +1,7 @@
 import React from "react";
 import { Route, Routes, BrowserRouter } from "react-router-dom";
 import MainLayout from "../layouts/MainLayout";
+import AuthLayout from "../layouts/AuthLayout.jsx";
 import {
   AboutPage,
   BlogPage,
@@ -28,10 +29,11 @@ const AppRoutes = () => {
             <Route path="blog" element={<BlogPage />} />
             <Route path="about" element={<AboutPage />} />
             <Route path="*" element={<NotFound />} />
-            <Route path="login" element={<LoginPage />} />
-            <Route path="sign-in" element={<SignupPage />} />
             <Route path="category" element={<CategoryPage />} />
             <Route path="category/:id" element={<SingleCategoryPage />} />
+          </Route>
+          <Route element={<AuthLayout />}>
+            <Route path="signin" element={<SignupPage />} />
           </Route>
         </Route>
       </Routes>
