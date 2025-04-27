@@ -34,6 +34,7 @@ const AppRoutes = () => {
           </Route>
           <Route element={<AuthLayout />}>
             <Route path="signin" element={<SignupPage />} />
+            <Route path="login" element={<LoginPage />} />
           </Route>
         </Route>
       </Routes>
