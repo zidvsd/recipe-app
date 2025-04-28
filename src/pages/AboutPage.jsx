@@ -14,12 +14,12 @@ const AboutPage = () => {
 
   return (
     <MotionSection className="custom-container py-20">
-      <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <div className="grid md:grid-cols-2 gap-12 items-center">
         {/* Image / Illustration */}
         <MotionImage
           src={chefImg} // replace with your image or illustration
           alt="About Cooking"
-          className="w-full mx-auto"
+          className=" mx-auto max-w-tablet-sm"
         />
 
         {/* Text Content */}

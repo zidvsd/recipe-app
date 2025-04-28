@@ -24,24 +24,24 @@ const Footer = () => {
         <div className="flex flex-col justify-between md:flex-1 w-full md:w-auto mt-8 md:mt-0">
           <div className="flex flex-row justify-between gap-x-12">
             <div className="flex flex-col gap-y-4">
-              <h1 className="heading-text text-sm sm:text-base md:text-lg text-nowrap">
+              <h1 className="heading-text text-sm sm:text-base md:text-lg text-nowrap hover-underline">
                 Quick Links
               </h1>
               <Link
                 to={"/"}
-                className="subheading-text text-[10px] sm:text-xs md:text-sm text-nowrap"
+                className="subheading-text text-[10px] sm:text-xs md:text-sm text-nowrap hover-underline"
               >
                 Home
               </Link>
               <Link
                 to={"/recipe"}
-                className="subheading-text text-[10px] sm:text-xs md:text-sm text-nowrap"
+                className="subheading-text text-[10px] sm:text-xs md:text-sm text-nowrap hover-underline"
               >
                 Recipes
               </Link>
               <Link
                 to={"/blog"}
-                className="subheading-text text-[10px] sm:text-xs md:text-sm text-nowrap"
+                className="subheading-text text-[10px] sm:text-xs md:text-sm text-nowrap hover-underline"
               >
                 Blog
               </Link>
@@ -53,19 +53,19 @@ const Footer = () => {
               </h1>
               <Link
                 to={""}
-                className="subheading-text text-[10px] sm:text-xs md:text-sm text-nowrap"
+                className="subheading-text text-[10px] sm:text-xs md:text-sm text-nowrap hover-underline"
               >
                 Share Recipe
               </Link>
               <Link
                 to={"/about"}
-                className="subheading-text text-[10px] sm:text-xs md:text-sm text-nowrap"
+                className="subheading-text text-[10px] sm:text-xs md:text-sm text-nowrap hover-underline"
               >
                 About Us
               </Link>
               <Link
                 to={""}
-                className="subheading-text text-[10px] sm:text-xs md:text-sm text-nowrap"
+                className="subheading-text text-[10px] sm:text-xs md:text-sm text-nowrap hover-underline"
               >
                 Contact
               </Link>
@@ -77,13 +77,13 @@ const Footer = () => {
               </h1>
               <Link
                 to={""}
-                className="subheading-text text-[10px] sm:text-xs md:text-sm text-nowrap"
+                className="subheading-text text-[10px] sm:text-xs md:text-sm text-nowrap hover-underline"
               >
                 Terms of Use
               </Link>
               <Link
                 to={""}
-                className="subheading-text text-[10px] sm:text-xs md:text-sm text-nowrap"
+                className="subheading-text text-[10px] sm:text-xs md:text-sm text-nowrap hover-underline"
               >
                 Privacy & Cookies
               </Link>

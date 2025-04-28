@@ -49,7 +49,7 @@ const HeroSection = () => {
   return (
     <section
       id="hero-section"
-      className="custom-container mx-auto grid grid-cols-1 md:grid-cols-2 w-full"
+      className="custom-container mx-auto grid grid-cols-1 md:grid-cols-2 w-full relative"
     >
       {/* hero text */}
       <motion.div

@@ -49,14 +49,14 @@ const LoginPage = () => {
             <button
               onClick={handleLogin} // Ensure you prevent form submit default behavior
               type="submit"
-              className="w-full p-3 bg-custom-peach text-white font-semibold rounded hover:bg-custom-peach transition"
+              className="w-full p-3 bg-custom-peach cursor-pointer text-white font-semibold rounded hover:bg-custom-peach transition"
             >
               Log In
             </button>
 
             {/* Forgot Password */}
             <div className="text-center">
-              <a href="#" className="text-sm text-custom-peach hover:underline">
+              <a href="#" className="text-sm text-neutral-400 hover:underline">
                 Forgot password?
               </a>
             </div>
@@ -68,7 +68,7 @@ const LoginPage = () => {
             <button
               onClick={handleCreateAccount}
               type="button"
-              className=" w-full p-3 bg-lime-green text-white font-semibold rounded hover:bg-lime-green transition"
+              className=" w-full cursor-pointer p-3 bg-lime-green text-white font-semibold rounded hover:bg-lime-green transition"
             >
               Create New Account
             </button>
