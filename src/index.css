@@ -41,7 +41,7 @@
 }
 
 .hover-underline {
-  @apply transition duration-300 hover:underline
+  @apply transition duration-300 hover:underline;
 }
 
 .hover-scale {
