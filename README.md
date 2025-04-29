@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Recipe App - README</title>
 </head>
 <body>
   <h1>🌐 Live Demo</h1>
@@ -58,7 +57,6 @@
     <li>Test thoroughly.</li>
     <li>Submit a pull request with a meaningful description.</li>
   </ol>
-
   <h2>Contact</h2>
   <p>For questions or feedback, feel free to email me at <a href="mailto:rashidvisda@gmail.com">rashidvisda@gmail.com</a>.</p>
 </body>
